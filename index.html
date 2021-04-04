@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>ToDo App</title>
+	<meta name="author" content="LR">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	
+	
+	<link rel="stylesheet" href="css/css/fontello.css" type="text/css" /> 
+	<link rel="stylesheet" href="css/indexStyle.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@350;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	 
+
+</head>
+<body>
+	
+	<div id="container">
+		<div id="menuSide">
+			<input type="text" class="searchInput" placeholder="Search">
+			
+			<div id="myDayButton" class="menuButton">
+				<i class="icon-sun"></i>
+				My Day (Not ready)
+				<div id="MyDayTaskCount" class="taskCount"></div>
+			</div>
+			
+			<div id="importantButton" class="menuButton">
+				<i class="icon-star"></i>
+				Important
+				<div id="importantTaskCount" class="taskCount"></div>
+			</div>
+			
+			<div id="PlannedButton" class="menuButton">
+				<i class=" icon-calendar"></i>
+				Planned (Not ready)
+			</div>
+			
+			<div id="TasksButton" class="menuButton">
+				<i class="icon-tasks"></i>
+				Tasks
+				<div id="TaskCount" class="taskCount"></div>
+			</div>
+			
+			<div id="completedButton" class="menuButton">
+				<i class="icon-calendar-check-o"></i>
+				Completed
+				<div id="completedTaskCount" class="taskCount"></div>
+			</div>
+			<div id="reloadStorage" class="menuButton">
+				<i class="icon-menu-1"></i>
+				Reload storage
+			</div>
+	
+	
+		</div>
+		<div id="contentSide">
+		
+			<div id="myDayContent" class="boxContent">
+				<div id="myDayHeader" class="contentHeader"> <h2>My Day</h2> </div>
+				<div id="Tasks"> 
+					<i class="icon-plus"></i>
+					<input type="text" class="taskInput" id="myDayTaskInput" placeholder="Add task"> 
+				</div>
+			</div>
+			
+			<div id="TasksContent" class="boxContent">
+				<div id="TasksHeader" class="contentHeader"> <h2>Tasks To Do</h2> </div>
+				<div id="Tasks"> 
+					<i class="icon-plus"></i>
+					<input type="text" class="taskInput" id="TaskInput" placeholder="Add task"> 
+					 <ul id="taskList"> 
+					</ul>
+				</div>
+			</div>
+			
+			<div id="CompletedContent"  class="boxContent">
+				<div id="CompletedHeader" class="contentHeader"> <h2>Completed</h2> </div>
+				<div id="completedTasks"> 
+					<ul id="complitedList"> 
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div id="ImportantContent"  class="boxContent">
+				<div id="ImportantHeader" class="contentHeader"> <h2>Important</h2> </div>
+				<div id="ImportantTasks">
+					<ul id="importantList"> 
+					</ul>
+				</div>
+			</div>
+	
+	
+		</div>
+	
+	
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js"></script> 
+	<script src="js/indexJs.js"></script>
+</body>
+</html>
